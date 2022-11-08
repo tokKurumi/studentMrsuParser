@@ -1,5 +1,4 @@
 import parser.XMLParser;
-
 import java.io.File;
 
 public class IDEMain {
