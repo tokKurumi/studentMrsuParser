@@ -3,11 +3,10 @@ package models;
 import java.lang.String;
 
 public class Client {
-	// todo: исправить модификаторы доступа
-	public int _id;
-	public String _name;
-	public String _personnelNumber;
-	public int _addressId;
+	private int _id;
+	private String _name;
+	private String _personnelNumber;
+	private int _addressId;
 
 	public Client(int id, String name, String personnelNumber, int adressId) {
 		_id = id;
@@ -21,5 +20,9 @@ public class Client {
 		_name = other._name;
 		_personnelNumber = other._personnelNumber;
 		_addressId = other._addressId;
+	}
+
+	public String toString() {
+		return String.format("{ %d, %s, %s, %d }", _id, _name, _personnelNumber, _addressId);
 	}
 }
