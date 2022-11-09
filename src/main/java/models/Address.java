@@ -30,8 +30,5 @@ public class Address {
 
 	public String toString() {
 		return String.format("{ %d, %s, %s, %d, %d, %d }", _id, _city, _street, _house, _floor, _flatNumber);
-		// return "{ " + Integer.toString(_id) + ", " + _city + ", " + _street + ", " +
-		// Integer.toString(_house) + ", "
-		// + Integer.toString(_floor) + Integer.toString(_flatNumber) + " }";
 	}
 }
