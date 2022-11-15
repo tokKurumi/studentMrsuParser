@@ -1,10 +1,13 @@
 import parser.XMLParser;
 import java.io.File;
+import java.io.IOException;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
 
 public class IDEMain {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 		XMLParser xmlParser = new XMLParser();
-		xmlParser.parseAddress(new File(new File("").getAbsolutePath() + "//address.xml"));
-		xmlParser.parseClient(new File(new File("").getAbsolutePath() + "//client.xml"));
+		xmlParser.parseAddress(new File("address.xml"));
+		xmlParser.parseClient(new File("client.xml"));
 	}
 }
